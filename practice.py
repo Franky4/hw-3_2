@@ -2,7 +2,7 @@ import requests
 import os
 
 
-def translate_it(from_file, to_file, from_lang, to_lang):
+def translate_it(from_file, to_file, from_lang, to_lang='ru'):
     with open(from_file) as f:
         text = f.read()
     url = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
